@@ -11,7 +11,9 @@ repositories {
 
 dependencyManagement {
     dependencies {
-        dependency "junit:junit:$junitVersion"
+        dependencySet(group: "junit", version: junitVersion) {
+            entry 'junit'
+        }
     }
 }
 
