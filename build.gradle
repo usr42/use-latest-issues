@@ -12,10 +12,12 @@ repositories {
 dependencyManagement {
     dependencies {
         dependency "junit:junit:$junitVersion"
+        dependency "org.hibernate:hibernate-validator:${hibernateValidatorVersion}"
     }
 }
 
 dependencies {
+    compile 'org.hibernate:hibernate-validator'
     testCompile 'junit:junit'
 }
 
